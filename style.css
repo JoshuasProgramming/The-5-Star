@@ -23,7 +23,8 @@ header{
     position: fixed;
     z-index: 999;
     background-color: black;
-    color:whitesmoke
+    color:whitesmoke;
+    box-shadow: 1px 1px 11px black;
 }
 
 .navbar{
@@ -40,6 +41,11 @@ header{
     text-decoration: none;
     font-size: 30px;
     color: whitesmoke;
+}
+
+.navbar li a:hover{
+    color:yellow;
+    transition:2s;
 }
 
 p{
