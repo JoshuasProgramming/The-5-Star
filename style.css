@@ -325,6 +325,8 @@ input{
     outline: none;
     margin: 10px;
     font-weight:bold;
+    border-radius: 15px;
+    border: 3px solid black;
 }
 
 textarea{
@@ -336,13 +338,49 @@ textarea{
     outline: none;
     margin: 10px;
     font-weight: bold;
+    border-radius: 15px;
+    border: 3px solid black;
 }
 
 .btn-4{
     position: absolute;
-    top:88%;
-    left: 52%;
+    top:90%;
+    left: 52.5%;
     transform: translate(-50%, -50%);
     width:200px;
-    font-size:70px;
+    font-size:100px;
+    color: white;
+    text-decoration: none;
+    width:300px;
+    background:black;
+    text-align: center;
+    opacity: 90%;
+}
+
+.btn-4:hover{
+    opacity:100%;
+}
+
+.btn-4:active{
+    box-shadow: 1px 1px 11px black;
+}
+
+/*Thank You Page*/
+.Go-back{
+    color:white;
+    text-decoration: none;
+    font-family: "Amatic SC", sans-serif;
+}
+
+.thanks-header{
+    position: absolute;
+    top:50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    color:black;
+    font-size: 130px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: bold;
+    margin:0px 30px;
+    text-shadow:5px 5px white;
 }

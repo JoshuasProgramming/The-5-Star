@@ -75,36 +75,15 @@
     <section class="section-4" id="section4">
         <h1 class="contact-header">Contact</h1>
         <form class="contact-form">
-            <input placeholder="First Name">
-            <input placeholder="Last Name">
-            <input placeholder="Email">
-            <textarea placeholder="Message"></textarea>
+            <input placeholder="First Name" id="firstname" autocomplete="off">
+            <input placeholder="Last Name" id="lastname" autocomplete="off">
+            <input placeholder="Email" id="email" autocomplete="off">
+            <textarea placeholder="Message" id="message" autocomplete="off"></textarea>
         </form>
-        <button class="btn-4">Submit</button>
+        <a class="btn-4" id="submit">Submit</a>
     </section>
 
-    <script>
-        /**
- * Function to create the Google Map
- */
-
-function myMap(){
-    //Map options
-    let options = {
-        zoom:15,
-        center:new google.maps.LatLng(51.500250,-0.157400)
-    }
-
-    //New map
-    let map = new google.maps.Map(document.getElementById('map'), options);
-
-    //Add marker
-    let marker = new google.maps.Marker({
-        position:{lat:51.500250, lng:-0.157400},
-        map:map
-    });
-}
-    </script>
+    <script src="script.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2ZOOoY0T_Z-BXajRx1TgsNc3GJr9_aQw&callback=myMap"></script>
 </body>
 </html>
