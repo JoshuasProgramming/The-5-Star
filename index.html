@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link rel="stylesheet" href="style.css">
+    <title>The 5 Star</title>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <section class="top" id="home">
+        <header>
+            <p>The<span>5 Star</span></p>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#section1">About</a></li>
+                <li><a href="#section2">Dishes</a></li>
+                <li><a href="#section3">Location</a></li>
+                <li><a href="#section4">Contact</a></li>
+            </ul>
+        </header>
+        <h1 class="home-header">Welcome to 5 star cooking</h1>
+        <button><a href="#section1" class="let-me">Let me see more</a></button>
+    </section>
+
+    <!--Section 1 => About Section-->
+    <section class="section-1" id="section1">
+        <h1 class="about-header">About</h1>
+        <h3 class="about-header-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas hic dignissimos labore repellendus! Exercitationem sequi sed nisi reiciendis eum suscipit vero maxime quos unde voluptate, voluptatem enim sint explicabo odio!</h3>
+    </section>
+
+    <!--Section 2 => Dishes section-->
+    <section class="section-2" id="section2">
+        <h1 class="food-header">Dishes</h1>
+        <div class="grid">
+            <article>
+                <h3>Food 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quidem modi quasi ea fugit rerum. Consequuntur nesciunt iste, facilis non, error temporibus perspiciatis odit laboriosam voluptatibus iusto minima suscipit eos?</p>
+                <button class="btn-1">Find!</button>
+            </article>
+    
+            <article>
+                <h3>Food 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quidem modi quasi ea fugit rerum. Consequuntur nesciunt iste, facilis non, error temporibus perspiciatis odit laboriosam voluptatibus iusto minima suscipit eos?</p>
+                <button class="btn-2">Find!</button>
+            </article>
+    
+            <article>
+                <h3>Food 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quidem modi quasi ea fugit rerum. Consequuntur nesciunt iste, facilis non, error temporibus perspiciatis odit laboriosam voluptatibus iusto minima suscipit eos?</p>
+                <button class="btn-3">Find!</button>
+            </article>
+        </div>
+        
+    </section>
+
+    <!--Section 3 => Location section-->
+    <section class="section-3" id="section3">
+        <h1 class="location-header">Location</h1>
+        <h3 class="location-text">1 Kinnerton St, London SW1X 8EA</h3>
+        <!--map contains the Google map api information-->
+        <div id="map" style="width:70%;height:350px;" class="google-api">
+
+        </div>
+        <h2 class="opening-time-header">Opening Times</h2>
+        <h3 class="mon-fri"> Mon/Fri 08:00 - 16:00</h3>
+        <h3 class="saturday"> Saturday 08:00 - 20:00</h3>
+        <h3 class="sunday"> Sunday Closed</h3>
+
+    </section>
+
+    <!--Section 4 => Contact section-->
+    <section class="section-4" id="section4">
+        <h1 class="contact-header">Contact</h1>
+        <form class="contact-form">
+            <input placeholder="First Name">
+            <input placeholder="Last Name">
+            <input placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+        </form>
+        <button class="btn-4">Submit</button>
+    </section>
+
+    <script>
+        /**
+ * Function to create the Google Map
+ */
+
+function myMap(){
+    //Map options
+    let options = {
+        zoom:15,
+        center:new google.maps.LatLng(51.500250,-0.157400)
+    }
+
+    //New map
+    let map = new google.maps.Map(document.getElementById('map'), options);
+
+    //Add marker
+    let marker = new google.maps.Marker({
+        position:{lat:51.500250, lng:-0.157400},
+        map:map
+    });
+}
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2ZOOoY0T_Z-BXajRx1TgsNc3GJr9_aQw&callback=myMap"></script>
+</body>
+</html>

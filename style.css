@@ -1,0 +1,342 @@
+/* Reset page in CSS */
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-size: 100%;
+    font-family: "Amatic SC", sans-serif;
+}
+
+div, section, span, ul, li, a{
+    box-sizing: border-box;
+}
+
+/* Header content => Includes Navigation bar*/
+
+header{
+    width:95%;
+    display:flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    position: fixed;
+    z-index: 999;
+    background-color: black;
+    color:whitesmoke
+}
+
+.navbar{
+    text-align:right;
+}
+
+.navbar li{
+    list-style: none;
+    display:inline-block;
+    width:100px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+p{
+    font-size:40px;
+}
+
+.let-me{
+    color:white;
+    text-decoration: none;
+}
+
+span{
+    color:yellow
+}
+
+/* Section Content */
+
+section{
+    width:100%;
+    float: left;
+    height: 100vh;
+    position: relative;
+}
+
+.top{
+    background-image: url(image1\ \(2\).jpg);
+    background-size:cover;
+    min-height: 50%;
+}
+
+.section-1{
+    background-color: lightslategray;
+}
+
+.section-2{
+    background-color: lightblue;
+    height:1000px;
+}
+
+.section-3{
+    background-color:yellowgreen;
+    height:1200px;
+}
+
+.section-4{
+    background-color:rosybrown;
+    height:1300px;
+}
+
+.home-header{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+    font-size: 150px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: bold;
+    margin:0px 30px;
+    text-shadow:5px 5px white;
+}
+
+.about-header{
+    position: absolute;
+    top:25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+    font-size: 150px;
+    font-weight: bold;
+    font-family: "Amatic SC", sans-serif;
+    margin:0px 30px;
+    text-shadow:5px 5px white;
+}
+
+.location-header{
+    position: absolute;
+    top:25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+    font-size: 150px;
+    font-weight: bold;
+    font-family: "Amatic SC", sans-serif;
+    margin:0px 30px;
+    text-shadow:5px 5px white;
+}
+
+.about-header-text{
+    position: absolute;
+    top:50%;
+    left: 10%;
+    color:black;
+    font-size: 50px;
+    font-family: "Amatic SC", sans-serif;
+    font-weight: bold;
+}
+
+button{
+    position: absolute;
+    top:85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:whitesmoke;
+    font-size: 45px;
+    font-family: "Amatic SC", sans-serif;
+    background:black;
+    padding:15px;
+    border: 0px solid white;
+    opacity: 95%;
+}
+
+button:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
+button:active{
+    box-shadow: 1px 1px 11px black;
+}
+
+/*Food section */
+
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows:180%;
+    grid-gap: 50px;
+    align-items:end;
+}
+
+.grid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+
+.btn-1{
+    position: absolute;
+    top:85%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-3{
+    position: absolute;
+    top:85%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+}
+
+.food-header{
+    position: absolute;
+    top:20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+    font-size: 150px;
+    font-family: "Amatic SC", sans-serif;
+    margin:0px 30px;
+    text-shadow:5px 5px white;
+}
+
+.grid > article > h3{
+    top:20%;
+    left: 70%;
+    color:black;
+    font-size: 50px;
+    font-family: "Amatic SC", sans-serif;
+    margin:0px 150px;
+    text-shadow:5px 5px white;
+}
+
+
+/*Location section */
+
+.google-api{
+    top:40%;
+    left:16%;
+    color:black;
+    font-size: 50px;
+    font-family: "Amatic SC", sans-serif;
+    margin:0px 10px;
+    text-shadow:5px 5px white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 11px black;
+}
+
+.location-text{
+    position: absolute;
+    top:35%;
+    left: 40%;
+    color:black;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Amatic SC", sans-serif;
+    margin:0px 30px;
+}
+
+.opening-time-header{
+    position: absolute;
+    top:70%;
+    left: 35%;
+    color:black;
+    font-size: 65px;
+    font-weight: bold;
+    font-family: "Amatic SC", sans-serif;
+    margin:0px 30px;
+    letter-spacing: 10px;
+}
+
+.mon-fri{
+    position: absolute;
+    top:78%;
+    left: 40%;
+    color:black;
+    font-size: 49px;
+    font-weight: bold;
+    font-family: "Amatic SC", sans-serif;
+    margin:0px 30px;
+}
+
+.saturday{
+    position: absolute;
+    top:86%;
+    left: 40%;
+    color:black;
+    font-size: 49px;
+    font-weight: bold;
+    font-family: "Amatic SC", sans-serif;
+    margin:0px 30px;
+}
+
+.sunday{
+    position: absolute;
+    top:94%;
+    left: 40%;
+    color:black;
+    font-size: 49px;
+    font-weight: bold;
+    font-family: "Amatic SC", sans-serif;
+    margin:0px 30px;
+}
+
+
+/*Contact section */
+
+
+.contact-header{
+    position: absolute;
+    top:20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+    font-size: 150px;
+    font-family: "Amatic SC", sans-serif;
+    margin:0px 30px;
+    text-shadow:5px 5px white;
+}
+
+.contact-form{
+    position: absolute;
+    top:30%;
+    left: 15%;
+    color:black;
+    font-size: 49px;
+    font-weight: bold;
+    font-family: "Amatic SC", sans-serif;
+    margin:0px 30px;
+}
+
+input{
+    width:900px;
+    height:100px;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Amatic SC", sans-serif;
+    outline: none;
+    margin: 10px;
+    font-weight:bold;
+}
+
+textarea{
+    width:900px;
+    height:280px;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Amatic SC", sans-serif;
+    outline: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.btn-4{
+    position: absolute;
+    top:88%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    width:200px;
+    font-size:70px;
+}
